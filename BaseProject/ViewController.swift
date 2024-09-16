@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func openCountryModule(_ sender: Any) {
+        // Feature module navigation
         let countryListViewController = CountryListConfigurator().setUpCountryListModule()
         
         self.navigationController?.pushViewController(countryListViewController, animated: true)
